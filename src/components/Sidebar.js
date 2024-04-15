@@ -21,6 +21,10 @@ const Sidebar = () => {
           {/* <FaHome className="icon" /> */}
           Home
         </Link>
+        <Link className="link" to="/public-page" onClick={toggleSidebar}>
+          {/* <FaHome className="icon" /> */}
+          Public Page
+        </Link>
         <Link className="link" to="/allocated" onClick={toggleSidebar}>
           {/* <FaList className="icon" /> */}
           Current Allocations

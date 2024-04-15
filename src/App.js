@@ -8,6 +8,7 @@ import Allocated from './pages/Allocated';
 import HomePage from './pages/Home';
 import SetGovernmentEmployeePage from './pages/SetGovernmentEmployeePage';
 import RemoveGovernmentOfficialPage from './pages/RemoveGovernmentOfficialPage';
+import Homefile from './pages/Homefile';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <div className="flex">
         <Sidebar />
         <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Homefile />} />
+          <Route path="/public-page" element={<HomePage />} />
           <Route path="/allocate" element={<Allocation />} />
           <Route path="/deallocate" element={<Deallocation />} />
           <Route path="/edit" element={<EditAllocation />} />
